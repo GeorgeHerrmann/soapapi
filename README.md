@@ -1,6 +1,7 @@
 # soapapi
 
 A basic REST API that reads data from SOAP Bot (https://github.com/GeorgeHerrmann/soapbot).
+SOAP API is written in Java using the Spring framework.
 To access the API you can do the following:
   - In a web browser you can go to http://api.georgster.com
   - Anywhere else must directly access the API at http://georgster.com:8080
