@@ -6,9 +6,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins="*")
-public class ActionController {
+public class SoapController {
     @GetMapping("/action")
     public CurrentAction currentAction () {
         return new CurrentAction();
+    }
+
+    @GetMapping("/error")
+    public ApiError errorMessage() {
+        return new ApiError("An invalid route was specified");
     }
 }
