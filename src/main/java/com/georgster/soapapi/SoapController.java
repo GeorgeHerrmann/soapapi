@@ -11,9 +11,4 @@ public class SoapController {
     public CurrentAction currentAction () {
         return new CurrentAction();
     }
-
-    @GetMapping("/error")
-    public ApiError errorMessage() {
-        return new ApiError("An invalid route was specified");
-    }
 }
